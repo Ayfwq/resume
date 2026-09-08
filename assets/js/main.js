@@ -13,7 +13,7 @@
     document.body.classList.remove("is-intro");
   };
   if (reduceMotion) enterSite();
-  else window.setTimeout(enterSite, 1200);
+  else window.setTimeout(enterSite, 650);
 
   /* Staggered reveals and stat counters. */
   const revealEls = $$(".reveal");
