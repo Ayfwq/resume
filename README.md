@@ -17,9 +17,14 @@ python -m http.server 8000
 
 然后打开 <http://127.0.0.1:8000>。
 
-## 部署目标
+## 部署
 
-目标域名为 `hellowq.icu`，服务器目录为 `/var/www/resume`，由 Nginx 提供静态文件服务。
+当前站点已通过 Nginx 部署在独立的 `2000` 端口：
+
+- 访问地址：<http://8.138.47.45:2000>
+- 服务器目录：`/var/www/resume`
+- Nginx 站点配置：`/etc/nginx/sites-available/resume`
+- 目标域名：`hellowq.icu`（需要将根域名 A 记录指向服务器 IP）
 
 更新网站代码后，在服务器执行：
 
