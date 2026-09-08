@@ -1,262 +1,74 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="theme-color" content="#07080d" />
-<title>Wenqiang · Personal Resume</title>
-<meta name="description" content="个人简历 / 作品集 —— Full-Stack & AI Engineer" />
-<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-<link rel="stylesheet" href="assets/css/style.css" />
+<!doctype html>
+<html lang="zh-CN" data-page-node-id="2KpCMPaoxVBaBlD3vHBb6U">
+<head data-page-node-id="QegRArTU3iblw921Q7RG4T">
+  <meta charset="UTF-8" data-page-node-id="kn2N7YeJuN4E7Ua7UCnQUx" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="b1ox6kNcWy5kZNd442h0MT" />
+  <meta name="theme-color" content="#fffaf2" data-page-node-id="93kwpdKpBcKhJYGypTj9fT" />
+  <title>Wenqiang · 个人简历</title>
+  <meta name="description" content="Wenqiang 的个人简历与作品集 —— Full-Stack & AI Engineer" data-page-node-id="Bd6v3X8qg1FwMF9032C1Ni" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" data-page-node-id="OZ6jJit5HMMMB5xYwcuYjf" />
+  <link rel="stylesheet" href="assets/css/style.css" data-page-node-id="IfYgv3aCSARCZOLvq3SVAT" />
 </head>
-<body class="is-loading">
-
-  <!-- ============ 进度条 ============ -->
-  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
-
-  <!-- ============ 顶部导航（离开欢迎页后出现） ============ -->
-  <header class="nav" id="nav">
-    <a class="nav__logo" href="#top"><span class="dot"></span>WQ</a>
-    <nav class="nav__links">
-      <a href="#about">关于</a>
-      <a href="#skills">技能</a>
-      <a href="#timeline">经历</a>
-      <a href="#projects">作品</a>
-      <a href="#contact">联系</a>
-    </nav>
-  </header>
-
-  <!-- ============ 欢迎页（全屏） ============ -->
-  <section class="welcome" id="welcome" aria-label="Welcome">
-    <canvas class="welcome__stars" id="stars" aria-hidden="true"></canvas>
-
-    <div class="aurora" aria-hidden="true">
-      <span class="aurora__blob aurora__blob--1"></span>
-      <span class="aurora__blob aurora__blob--2"></span>
-      <span class="aurora__blob aurora__blob--3"></span>
-      <span class="aurora__grid"></span>
-    </div>
-
-    <div class="welcome__inner">
-      <p class="welcome__eyebrow"><span>PORTFOLIO</span><i></i><span>2026</span></p>
-
-      <h1 class="welcome__title" id="welcomeTitle" data-text="WELCOME"></h1>
-
-      <p class="welcome__sub">
-        欢迎来到我的个人主页 —— 向下滚动，或点击进入
-      </p>
-
-      <button class="enter" id="enterBtn" type="button">
-        <span class="enter__label">ENTER</span>
-        <span class="enter__ring" aria-hidden="true"></span>
-      </button>
-    </div>
-
-    <div class="scroll-hint" aria-hidden="true">
-      <span class="scroll-hint__text">SCROLL</span>
-      <span class="scroll-hint__line"><i></i></span>
-    </div>
+<body class="is-intro" data-page-node-id="Cgehn0uwLj3bX8NEjAdbGZ">
+  <section class="welcome" id="welcome" aria-label="Welcome" data-page-node-id="MVXjDjpnTQ1HTN1H7EFmBy">
+    <div class="welcome__orb welcome__orb--one" aria-hidden="true" data-page-node-id="NPnDJQqqpAnpVTuG4tCQcv"></div>
+    <div class="welcome__orb welcome__orb--two" aria-hidden="true" data-page-node-id="j4aU0kH9aRAACc32gSE8Eo"></div>
+    <h1 class="welcome__title" data-page-node-id="tCtbHQ60Ju3amUIrJUK7Z4">WELCOME</h1>
+    <span class="welcome__spark welcome__spark--one" aria-hidden="true" data-page-node-id="9jVjtiBqc2dbWQJsKjDB39"></span>
+    <span class="welcome__spark welcome__spark--two" aria-hidden="true" data-page-node-id="3k0PdFZZZ68TNABaNfptCn"></span>
   </section>
 
-  <!-- ============ 渐变过渡遮罩 ============ -->
-  <div class="wipe" id="wipe" aria-hidden="true"></div>
+  <header class="nav" id="nav" data-page-node-id="BREEqspTMryiAUdSXWL9y3">
+    <a class="nav__logo" href="#top" data-page-node-id="piD8nrBqq1CHGq8CfXaSR1"><span class="dot" data-page-node-id="8aMLJGt6MrHBMSurGdByX3"></span>WQ</a>
+    <nav class="nav__links" aria-label="页面导航" data-page-node-id="ikJENnjVbSEdCnBf5itnME"><a href="#about" data-page-node-id="uIQGfJHSjcIYIVvzVEO6f5">关于</a><a href="#skills" data-page-node-id="kpgFS9yEiRpOu5VdOK3fhE">技能</a><a href="#timeline" data-page-node-id="9WKzAtMWFTLWgJU51SpWkn">经历</a><a href="#projects" data-page-node-id="joBNNYixMg9bCvQn3fCDnq">作品</a><a href="#contact" data-page-node-id="I1F4rHE5kN2pVc8X6hYC4g">联系</a></nav>
+  </header>
 
-  <!-- ============ 正文 ============ -->
-  <main class="content" id="top">
-
-    <!-- 关于 -->
-    <section class="section about" id="about">
-      <div class="wrap about__grid">
-        <div class="about__text reveal">
-          <p class="kicker"><i></i>ABOUT ME</p>
-          <h2 class="h2">
-            你好，我是 <span class="grad" id="nameText" data-text="Wenqiang">Wenqiang</span>
-          </h2>
-          <p class="lead">
-            一名全栈工程师 / AI 应用工程师。喜欢把想法快速做成能跑起来的东西：
-            从小程序、Agent 编排，到自动化发布与云端部署。
-          </p>
-          <p class="muted">
-            我相信「先跑起来，再变好看」。日常在写 Python、Vue、TypeScript，
-            也在折腾 LangGraph、PostgreSQL 与各种自动化工具链。
-          </p>
-
-          <div class="about__meta">
-            <div><span>LOCATION</span><b>China</b></div>
-            <div><span>FOCUS</span><b>Full-Stack · AI Agent</b></div>
-            <div><span>STATUS</span><b><i class="pulse"></i>Open to work</b></div>
-          </div>
-
-          <div class="about__cta">
-            <a class="btn btn--primary" href="#contact">联系我</a>
-            <a class="btn" href="#projects">看看作品</a>
-          </div>
+  <main class="content" id="top" data-page-node-id="Vt3wZbdv9nF7ufc0XtYoXF">
+    <section class="hero section" id="about" data-page-node-id="41t0ykhhaoM6vVVy0aNRHi">
+      <div class="wrap hero__grid" data-page-node-id="JtECe2nhVHucfGZ6mlYn7C">
+        <div class="hero__copy reveal" data-page-node-id="yIrsLsLxYXWy1hn4e8bKjI">
+          <p class="kicker" data-page-node-id="eB0TJHc3gfWyqgL3DeIyla"><i data-page-node-id="bOGTAaXcvMc7aS93NohvVB"></i>HELLO, I’M WENQIANG</p>
+          <h2 class="hero__title" data-page-node-id="oBv4HoTCEvlqaqFH8U3DCX">把灵感，变成<br  data-page-node-id="Ygkg1WGn4GQAEjGYhBFvXE"/><span class="grad" data-page-node-id="mSKdBdeqqLKS57oydKU4zr">真正能用的东西。</span></h2>
+          <p class="lead" data-page-node-id="SOd62tNpqLC9o69wONsjxB">一名全栈工程师 / AI 应用工程师。喜欢把想法快速做成能跑起来的东西：从小程序、Agent 编排，到自动化发布与云端部署。</p>
+          <p class="muted" data-page-node-id="kyCzf6j6SlAKZ5mOF6Dx9f">我相信「先跑起来，再变好看」。日常在写 Python、Vue、TypeScript，也在折腾 LangGraph、PostgreSQL 与各种自动化工具链。</p>
+          <div class="hero__meta" data-page-node-id="GoAuGoqh0zokhERd7RhoBX"><div data-page-node-id="gz2YpK8rq15ikl4dCrTqtC"><span data-page-node-id="ETO4yny7oqNEs2x0JwgrnI">LOCATION</span><b data-page-node-id="GBp8fNDF6FfiouD1SUku8F">China</b></div><div data-page-node-id="tWcCdM2YGVlZz7f0inxHai"><span data-page-node-id="MaTYshcXZhkuoqWSHzemUd">FOCUS</span><b data-page-node-id="IVvAjMEG7c4YZJzAGhIQpw">Full-Stack · AI Agent</b></div><div data-page-node-id="GgCNCEn2uw0IFNbRCcX3lr"><span data-page-node-id="R70P6Iqhq3igx7dcOPx31p">STATUS</span><b data-page-node-id="F8W4JA1pc9nrGUKach477e"><i class="pulse" data-page-node-id="iVLJbLPhuLp7fqBF89HMQ5"></i>Open to work</b></div></div>
+          <div class="hero__cta" data-page-node-id="VsxfzDcNe8IMzs6rXePD0s"><a class="btn btn--primary" href="#contact" data-page-node-id="dkSijHOkjaejIhYEHubepT">联系我 <span data-page-node-id="sTjZd9sbOyhdd0mugehE5U">↗</span></a><a class="btn" href="#projects" data-page-node-id="HcxKZ8l9oWqwqqQEPVJS7x">看看作品</a></div>
         </div>
-
-        <div class="about__card reveal" data-delay="1">
-          <div class="card-3d">
-            <div class="card-3d__glow"></div>
-            <div class="card-3d__body">
-              <div class="avatar"><span>WQ</span></div>
-              <h3>Wenqiang</h3>
-              <p>Full-Stack &amp; AI Engineer</p>
-              <ul class="card-3d__stats">
-                <li><b data-count="4">0</b><span>年经验</span></li>
-                <li><b data-count="20">0</b><span>+ 项目</span></li>
-                <li><b data-count="10">0</b><span>+ 平台</span></li>
-              </ul>
-            </div>
-          </div>
+        <div class="profile-card reveal" data-delay="1" data-page-node-id="TSrP01XO23yBG0DI5WxjBK">
+          <div class="profile-card__tape" aria-hidden="true" data-page-node-id="UvXKmX3NK5wl8VCLrDvsZ1">GOOD<br  data-page-node-id="f4td5q4pNdaBaFZRI1TQry"/>VIBES</div>
+          <div class="profile-card__top" data-page-node-id="5CebSTAjj3jfmF063jHSXU"><span class="profile-card__hello" data-page-node-id="owPx6czHaj52YOyFxA0mtf">你好，世界！</span><span class="profile-card__sun" aria-hidden="true" data-page-node-id="6BxFAGheMvMFgqFpZxTGc2">☀</span></div>
+          <div class="profile-card__avatar" data-page-node-id="6YZFRbCVMqZsN5XHCkprWh">WQ</div><h3 data-page-node-id="nSF61EJLakRRiVH6hmKCBv">Wenqiang</h3><p data-page-node-id="dFBLersYJDdnAFWkAjTrlp">Full-Stack &amp; AI Engineer</p><div class="profile-card__line" data-page-node-id="7LO4Ua6GPWhZGnaEBhGxsp"></div>
+          <div class="profile-card__stats" data-page-node-id="7kMUJBP6WNKhcKDeQHkTct"><div data-page-node-id="5ylVQDb1t2X21IA2HEH82q"><b data-count="4" data-page-node-id="ep7S5syoR7DjKIScrn0LJd">0</b><span data-page-node-id="V2TPT7LVPOAgGQRpD6cCF6">年经验</span></div><div data-page-node-id="llLTWBgyLfPy5cCIFDaY14"><b data-count="20" data-page-node-id="6lQaiCA8GtENcYEnxQfpyl">0</b><span data-page-node-id="ZCB3slRJce6PqRrJR2597u">+ 项目</span></div><div data-page-node-id="s7rOrr6mfO6NKrJKMyS9Rw"><b data-count="10" data-page-node-id="1UauQjqUC3tAuAKnWujkiE">0</b><span data-page-node-id="1R5xQ19LFeDgTBbSs4ly3A">+ 平台</span></div></div>
+          <div class="profile-card__sticker" data-page-node-id="HwdVouyHgns9ofrfEcbpYC">LET’S<br  data-page-node-id="eVQuaVmOcme0WxC2fYcKrU"/>MAKE<br  data-page-node-id="OOOXH9ZorYBLLShVupRtLi"/>IT ✦</div>
         </div>
       </div>
     </section>
 
-    <!-- 技能 -->
-    <section class="section" id="skills">
-      <div class="wrap">
-        <p class="kicker reveal"><i></i>SKILLS</p>
-        <h2 class="h2 reveal">技术栈</h2>
-        <p class="section__desc reveal">工具只是手段，解决问题才是目的。</p>
+    <section class="section" id="skills" data-page-node-id="DxSO0sEkJ4WO05FSSQfCxL"><div class="wrap" data-page-node-id="4Xgeih9OnKhFRHuueHDNDU"><p class="kicker reveal" data-page-node-id="YpCu52LxK3BMOc5rqBoGej"><i data-page-node-id="pLzj9lrIWYmDVl4kL3zru0"></i>SKILLS</p><h2 class="h2 reveal" data-page-node-id="FL82mXjLb7BhZPlxuiXumE">技术栈</h2><p class="section__desc reveal" data-page-node-id="opZqmFLAuJDWWaBNeg3EkU">工具只是手段，解决问题才是目的。</p><div class="skills" data-page-node-id="Jf9zYvshldD31Mi1QdoyNx">
+      <article class="skill reveal" style="--lv:92%" data-page-node-id="p71GGhPGAMXRvQVe5I8cwl"><div class="skill__top" data-page-node-id="oZBZGrlkR7jo2wHCMnaUYO"><h3 data-page-node-id="0FYRnM7sXkmAUehrws6XCI">Python / FastAPI</h3><span data-page-node-id="ZzJGiCdBKP0Wv9SZlBRscW">92%</span></div><div class="skill__bar" data-page-node-id="MnHOJJy3maMGGAR8aLdprh"><i data-page-node-id="wDE1eeTbICAqQdhSpa2MF8"></i></div><p data-page-node-id="Ro4GmL2AOZGScE6VgUKw0P">后端服务、Agent 编排、爬虫与自动化。</p></article>
+      <article class="skill reveal" data-delay="1" style="--lv:88%" data-page-node-id="SENQNJglPAuzkYBBFQ0xFA"><div class="skill__top" data-page-node-id="h7RHMuNzpRXcwTHbEl0MsB"><h3 data-page-node-id="ENuGhXkNvNA4B905t6jnnz">Vue / TypeScript</h3><span data-page-node-id="R1jdp63MfyoToYDSAXdZMs">88%</span></div><div class="skill__bar" data-page-node-id="Py9v8EVyq3JTwmN4dAQRWb"><i data-page-node-id="ON1A29IJghi0p4FGi29Rod"></i></div><p data-page-node-id="nv6tAzloThd1o6PqFEq6Pm">前端页面、组件体系与交互细节。</p></article>
+      <article class="skill reveal" data-delay="2" style="--lv:85%" data-page-node-id="jY48oncgbgpbrwCnSrzMoL"><div class="skill__top" data-page-node-id="LsNvdN2noH2PpNKAMpt8MW"><h3 data-page-node-id="jAfeURuK9CkHTxs2vUC0Gv">LangGraph / LLM</h3><span data-page-node-id="TDNTrEnXh23uTMLMpf1B5W">85%</span></div><div class="skill__bar" data-page-node-id="x3VUlDpJZrZsrZjQxq7LM2"><i data-page-node-id="eqlHHDLJ5r3HHUkTvntCEh"></i></div><p data-page-node-id="dUgreaZchqlrt0iYuZwFd6">状态机式 Agent 流程、工具调用与记忆。</p></article>
+      <article class="skill reveal" data-delay="1" style="--lv:80%" data-page-node-id="D3TS3YIK7MRjV6CPLzugSD"><div class="skill__top" data-page-node-id="9ShhqKCtbfTo8cpTzhr9Jt"><h3 data-page-node-id="K4T8NpxF7EB0LtQWliEAa0">PostgreSQL / Docker</h3><span data-page-node-id="aW76GmvP7FI9ZurqsqFWqF">80%</span></div><div class="skill__bar" data-page-node-id="tiDR8pdGDT0YpF8mOhyoDI"><i data-page-node-id="8umRLKhsUk9x1a7yW8HE5i"></i></div><p data-page-node-id="8pl0GO3Zd7XBA94K4ZikRk">数据建模、迁移与容器化部署。</p></article>
+      <article class="skill reveal" data-delay="2" style="--lv:78%" data-page-node-id="0Ab2I6Wl2hO9tqP33GVjGg"><div class="skill__top" data-page-node-id="MnPY2IB9YtlTiI9p77EiHK"><h3 data-page-node-id="UC0c2SAHp8pO2XSfBywnYt">Playwright</h3><span data-page-node-id="v37k31Lwc4jzWY1PUc7Q6z">78%</span></div><div class="skill__bar" data-page-node-id="NuqH3wlerPJ0ajCJlpYcCq"><i data-page-node-id="evvEDEvjL0P3oVDf7n0Wt9"></i></div><p data-page-node-id="rEY1GhfTXuVFnpvryGTOH2">多平台自动化发布与端到端测试。</p></article>
+      <article class="skill reveal" style="--lv:75%" data-page-node-id="lqaT0G2NX1m9V9nZMnqcQP"><div class="skill__top" data-page-node-id="N7oS70GGWNfIghnOEJxy0K"><h3 data-page-node-id="28pqfAnug9cLTa4fhljJNb">微信小程序 / Electron</h3><span data-page-node-id="A8vM4tD74zljEglxbFU40x">75%</span></div><div class="skill__bar" data-page-node-id="OuPjB8v7xXdi1P40Cpuu8H"><i data-page-node-id="ycFtlYqAbiuCvPp7NKuJrO"></i></div><p data-page-node-id="IbX42wKBNiiniQ07H82BCZ">云开发小程序与桌面客户端。</p></article>
+    </div></div></section>
 
-        <div class="skills">
-          <article class="skill reveal" style="--lv:92%">
-            <div class="skill__top"><h3>Python / FastAPI</h3><span>92%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>后端服务、Agent 编排、爬虫与自动化。</p>
-          </article>
-          <article class="skill reveal" data-delay="1" style="--lv:88%">
-            <div class="skill__top"><h3>Vue / TypeScript</h3><span>88%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>前端页面、组件体系与交互细节。</p>
-          </article>
-          <article class="skill reveal" data-delay="2" style="--lv:85%">
-            <div class="skill__top"><h3>LangGraph / LLM</h3><span>85%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>状态机式 Agent 流程、工具调用与记忆。</p>
-          </article>
-          <article class="skill reveal" data-delay="1" style="--lv:80%">
-            <div class="skill__top"><h3>PostgreSQL / Docker</h3><span>80%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>数据建模、迁移与容器化部署。</p>
-          </article>
-          <article class="skill reveal" data-delay="2" style="--lv:78%">
-            <div class="skill__top"><h3>Playwright</h3><span>78%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>多平台自动化发布与端到端测试。</p>
-          </article>
-          <article class="skill reveal" style="--lv:75%">
-            <div class="skill__top"><h3>微信小程序 / Electron</h3><span>75%</span></div>
-            <div class="skill__bar"><i></i></div>
-            <p>云开发小程序与桌面客户端。</p>
-          </article>
-        </div>
-      </div>
-    </section>
+    <section class="section" id="timeline" data-page-node-id="IMnaBAHria0oNBtyCKM6dD"><div class="wrap" data-page-node-id="srAuBwMETruIjCI4Xjby7p"><p class="kicker reveal" data-page-node-id="6bs513WNrCWZ71ziTLLCFz"><i data-page-node-id="XOpcsHJk9HloLjl6r5OPJO"></i>EXPERIENCE</p><h2 class="h2 reveal" data-page-node-id="sFPmBtqkJsoxNhoDPtXqYb">经历 &amp; 时间线</h2><ol class="timeline" data-page-node-id="4ICGXAFQXAcS8XNGRrkkAa">
+      <li class="reveal" data-page-node-id="BR6XPq7a4D7fZ3ghDGpdup"><span class="timeline__dot" data-page-node-id="Q8gVNx8Iiq6e7eWBWTBeve"></span><div class="timeline__card" data-page-node-id="HyFgG0MtsexWWFjw0X9Wa0"><span class="timeline__date" data-page-node-id="eKWo8GI3MMrp5uDHK41UZl">2026 · NOW</span><h3 data-page-node-id="IlYm8GiWiJULABA1F8lMIQ">独立开发 · AI 应用方向</h3><p data-page-node-id="MktYeySaUBwsZQ7CH1j9Yt">搭建 GEO 内容生成与多平台自动发布系统，LangGraph + FastAPI + PostgreSQL，全链路自研。</p></div></li>
+      <li class="reveal" data-delay="1" data-page-node-id="YazOdUmSZLuv0qOsjjXpsc"><span class="timeline__dot" data-page-node-id="LOY31eQyLHXtDthYftKFRJ"></span><div class="timeline__card" data-page-node-id="NCV1IwMg0wUCElZGgwci5L"><span class="timeline__date" data-page-node-id="puADbmU6g3ewVslz0bA5Wf">2025</span><h3 data-page-node-id="7luMipaSrEdYKRB6E1Nhf5">微信小程序「品食家」</h3><p data-page-node-id="UuIxcJYEP4O15TouC2Pudi">双厨房模型的情侣点餐小程序，微信云开发，含爱心币体系、情侣绑定与后台管理。</p></div></li>
+      <li class="reveal" data-delay="2" data-page-node-id="qf41rhL3XMoYRgZGi1BdHW"><span class="timeline__dot" data-page-node-id="CVZYGGRVbGvbXxMTbCKcbJ"></span><div class="timeline__card" data-page-node-id="J0JisRebPEdlFQkU6TOwfr"><span class="timeline__date" data-page-node-id="KpLA2pqTAdGCfVdbQsvWd4">2024</span><h3 data-page-node-id="i3607VfVELImfA235WfDXK">开源 SRE 方向探索</h3><p data-page-node-id="BI0aEv7pv76hPcefXIe4Fi">参与 OpenSRE 类项目，梳理 Agent 编排架构与可观测性链路。</p></div></li>
+      <li class="reveal" data-page-node-id="YpU9QlIANrxK4EYmGhKTZn"><span class="timeline__dot" data-page-node-id="2eGG2NriZA74W5fNc11qP0"></span><div class="timeline__card" data-page-node-id="LwpfaSpFzwASk6myl0tDfm"><span class="timeline__date" data-page-node-id="jevNQc3QPyyPmKVDiW1In8">EARLIER</span><h3 data-page-node-id="X2FEGWlHSDD5JL4xVMkFTH">全栈基础建设</h3><p data-page-node-id="1GFHE45zrMnBGZqpQZFDPy">从前端组件到后端接口、从数据库到服务器部署，逐步打通完整链路。</p></div></li>
+    </ol></div></section>
 
-    <!-- 经历 -->
-    <section class="section" id="timeline">
-      <div class="wrap">
-        <p class="kicker reveal"><i></i>EXPERIENCE</p>
-        <h2 class="h2 reveal">经历 &amp; 时间线</h2>
+    <section class="section" id="projects" data-page-node-id="KqHPzyaHuWsPzrkYmr01mU"><div class="wrap" data-page-node-id="jHIMVwIfACS2SzFbJ24ZGq"><p class="kicker reveal" data-page-node-id="dmykaJp4dWbSt2CVa3kPUT"><i data-page-node-id="svcJUcYj43Cuebu9edP7kb"></i>PROJECTS</p><h2 class="h2 reveal" data-page-node-id="ivGTbFpsztLtyQabNpbNqO">作品集</h2><div class="projects" data-page-node-id="nW531n4qboCOiH8ogb0ezG">
+      <a class="project reveal" href="#contact" data-page-node-id="1Oodg0PPJsqiHUfREBYpVz"><div class="project__img project__img--1" data-page-node-id="3n8U9qkHYIltmJCqNBOqNF"><span data-page-node-id="j9yAboZ6iMHcXeNzAd7D43">GEO</span></div><div class="project__body" data-page-node-id="GvHT7jv5HXrZpDalmc5gJH"><h3 data-page-node-id="HfqeAfLoOrz0wCG5YbORcT">AutoGEO 内容系统</h3><p data-page-node-id="ZaloF02huHT3531EJMtkni">从选题到文章生成、账号绑定、审核发布的一体化 Agent 流水线。</p><ul class="tags" data-page-node-id="vwnhItPFAp2I2CKLZEM8Yg"><li data-page-node-id="00udAjoNQDClPod9YQryUl">LangGraph</li><li data-page-node-id="HIpqkwEBuQi5QlfPlCykJJ">FastAPI</li><li data-page-node-id="RkaYEUiMDJ7JHUQbTUwnIq">PostgreSQL</li></ul></div></a>
+      <a class="project reveal" data-delay="1" href="#contact" data-page-node-id="W1DrBxptvXcemsHl8039jL"><div class="project__img project__img--2" data-page-node-id="hmyY8wL9XM43Zy2F22GWQW"><span data-page-node-id="QgilJi84dfRMEGbW4UbIdk">APP</span></div><div class="project__body" data-page-node-id="UWmWoiqy7b4mNksZmGuv3V"><h3 data-page-node-id="BaatXejRIBEpPYxp5oswB4">品食家小程序</h3><p data-page-node-id="wywmeYjYnrtlmfUj0Nr5d8">双厨房点餐小程序，互要点餐、图片上传、爱心币定价。</p><ul class="tags" data-page-node-id="pWIQAidzpGH0fz7nxAO0l6"><li data-page-node-id="lCCczCrdH0UM1Y1O4Hs5Fo">微信小程序</li><li data-page-node-id="RF6spi640qXzmuQP5yB7uS">云开发</li></ul></div></a>
+      <a class="project reveal" data-delay="2" href="#contact" data-page-node-id="NHCb5C9aJsyBPRsyEdK9b1"><div class="project__img project__img--3" data-page-node-id="9VoPYSAWGnvlUcdegG1pgx"><span data-page-node-id="fxC1cgQpLaSxD1QmHDeLSa">BOT</span></div><div class="project__body" data-page-node-id="Bz2XqziMrisNHawMvKvvFC"><h3 data-page-node-id="FsO0ID4LRttFZLFcpju1CW">多平台发布工具</h3><p data-page-node-id="4U9MxweH0qItjfU5GjUJaa">基于 Playwright 的 10+ 平台文章自动发布适配器。</p><ul class="tags" data-page-node-id="lZlwCti4xAhl7rUEbIxpPK"><li data-page-node-id="5q5Fia0BntJraCC9CLHlLY">Playwright</li><li data-page-node-id="q693Ng7LZFwgFaij6KEZNe">Electron</li></ul></div></a>
+    </div></div></section>
 
-        <ol class="timeline">
-          <li class="reveal">
-            <span class="timeline__dot"></span>
-            <div class="timeline__card">
-              <span class="timeline__date">2026 · NOW</span>
-              <h3>独立开发 · AI 应用方向</h3>
-              <p>搭建 GEO 内容生成与多平台自动发布系统，LangGraph + FastAPI + PostgreSQL，全链路自研。</p>
-            </div>
-          </li>
-          <li class="reveal" data-delay="1">
-            <span class="timeline__dot"></span>
-            <div class="timeline__card">
-              <span class="timeline__date">2025</span>
-              <h3>微信小程序「品食家」</h3>
-              <p>双厨房模型的情侣点餐小程序，微信云开发，含爱心币体系、情侣绑定与后台管理。</p>
-            </div>
-          </li>
-          <li class="reveal" data-delay="2">
-            <span class="timeline__dot"></span>
-            <div class="timeline__card">
-              <span class="timeline__date">2024</span>
-              <h3>开源 SRE 方向探索</h3>
-              <p>参与 OpenSRE 类项目，梳理 Agent 编排架构与可观测性链路。</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <span class="timeline__dot"></span>
-            <div class="timeline__card">
-              <span class="timeline__date">EARLIER</span>
-              <h3>全栈基础建设</h3>
-              <p>从前端组件到后端接口、从数据库到服务器部署，逐步打通完整链路。</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- 作品 -->
-    <section class="section" id="projects">
-      <div class="wrap">
-        <p class="kicker reveal"><i></i>PROJECTS</p>
-        <h2 class="h2 reveal">作品集</h2>
-
-        <div class="projects">
-          <a class="project reveal" href="#contact">
-            <div class="project__img project__img--1"><span>GEO</span></div>
-            <div class="project__body">
-              <h3>AutoGEO 内容系统</h3>
-              <p>从选题到文章生成、账号绑定、审核发布的一体化 Agent 流水线。</p>
-              <ul class="tags"><li>LangGraph</li><li>FastAPI</li><li>PostgreSQL</li></ul>
-            </div>
-          </a>
-          <a class="project reveal" data-delay="1" href="#contact">
-            <div class="project__img project__img--2"><span>APP</span></div>
-            <div class="project__body">
-              <h3>品食家小程序</h3>
-              <p>双厨房点餐小程序，互要点餐、图片上传、爱心币定价。</p>
-              <ul class="tags"><li>微信小程序</li><li>云开发</li></ul>
-            </div>
-          </a>
-          <a class="project reveal" data-delay="2" href="#contact">
-            <div class="project__img project__img--3"><span>BOT</span></div>
-            <div class="project__body">
-              <h3>多平台发布工具</h3>
-              <p>基于 Playwright 的 10+ 平台文章自动发布适配器。</p>
-              <ul class="tags"><li>Playwright</li><li>Electron</li></ul>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 联系 -->
-    <section class="section contact" id="contact">
-      <div class="wrap">
-        <div class="contact__box reveal">
-          <p class="kicker"><i></i>CONTACT</p>
-          <h2 class="h2">一起做点有意思的东西</h2>
-          <p class="lead">有想法、有项目、或者只是想聊聊，都可以找我。</p>
-          <div class="contact__links">
-            <a class="btn btn--primary" href="https://github.com/Ayfwq" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="mailto:1791906668@qq.com">Email</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="wrap footer__inner">
-        <span>© <span id="year">2026</span> Wenqiang</span>
-        <span class="footer__host">hellowq.icu</span>
-      </div>
-    </footer>
+    <section class="section contact" id="contact" data-page-node-id="lEAh7lQtULWATplFqxVFVe"><div class="wrap" data-page-node-id="M4YPfWYI4pnZl2GxmLNrK5"><div class="contact__box reveal" data-page-node-id="xDBqHo3YfCi46RcvpfN7ge"><p class="kicker" data-page-node-id="MZbWkOMZ8KDGz0lGDq6B9P"><i data-page-node-id="xNDeQmK0KqiBLVgAPzZN06"></i>CONTACT</p><h2 class="h2" data-page-node-id="QC7IkuNw2LACWnAZKqY5Av">一起做点有意思的东西</h2><p class="lead" data-page-node-id="iC3HricBXCM7TvMutzzWHP">有想法、有项目、或者只是想聊聊，都可以找我。</p><div class="contact__links" data-page-node-id="1KAqDP5C1iOafAoH2G3sdk"><a class="btn btn--primary" href="https://github.com/Ayfwq" target="_blank" rel="noopener" data-page-node-id="mc3bzRpNJAQGV0WfnnJpEF">GitHub ↗</a><a class="btn" href="mailto:1791906668@qq.com" data-page-node-id="h2lp4SJc1xPTU1MrEaKe1l">Email</a></div></div></div></section>
+    <footer class="footer" data-page-node-id="XAtA1EBoE3TaWkTwj45Ymi"><div class="wrap footer__inner" data-page-node-id="lBrKW53tM6IDGkNa6BOnWb"><span data-page-node-id="PTuaBTnMvUBnxs7mMHJTw7">© <span id="year" data-page-node-id="C9xXcQkdLJjkBWnscEuY1y">2026</span> Wenqiang</span><span class="footer__host" data-page-node-id="W6PMuaFZ9J52CGX6D0CILN">hellowq.icu</span></div></footer>
   </main>
-
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-
   <script src="assets/js/main.js"></script>
 </body>
 </html>
