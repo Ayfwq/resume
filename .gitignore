@@ -6,6 +6,13 @@ node_modules/
 .workbuddy/
 *.log
 *.local
+~$*.docx
+/docx/
+
+# Local portrait alternatives; only profile-blue.png is used by the site.
+/assets/profile.png
+/assets/profile-retouched.png
+/assets/profile-white.png
 
 # 临时/构建产物
 dist/
